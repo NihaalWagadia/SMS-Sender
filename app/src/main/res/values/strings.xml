@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NotificationHelper</string>
+    <string name="title_activity_messsage">Messsage</string>
+    <string name="title_activity_reminder">Reminder</string>
+    <string name="title_activity_contacts_list">ContactsList</string>
+    <string name="title_activity_new_contact_list">NewContactList</string>
+</resources>
