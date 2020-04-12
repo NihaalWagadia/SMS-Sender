@@ -33,13 +33,34 @@
     </LinearLayout>
 
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:id="@+id/chip_linear"
+        android:layout_below="@id/linear_lay">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chip_group">
+        </com.google.android.material.chip.ChipGroup>
+        </ScrollView>
+    </LinearLayout>
+
+
     <EditText
         android:id="@+id/text_message"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="399dp"
+        android:layout_below="@+id/chip_linear"
         android:hint="Enter Message:"
-        android:textSize="22sp"
-        android:layout_below="@+id/linear_lay"/>
+        android:textSize="22sp" />
 
     <Button
         android:layout_width="match_parent"
@@ -48,17 +69,9 @@
         android:id="@+id/send_button"
         android:text="Send"
         android:textSize="25sp"
-        android:layout_below="@+id/text_message"/>
+        android:layout_alignParentBottom="true"
+        />
 
-    <GridView
-        android:id="@+id/grid_View"
-        android:numColumns="auto_fit"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/send_button">
-
-    </GridView>
 
 
 </RelativeLayout>
